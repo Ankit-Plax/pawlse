@@ -1,0 +1,22 @@
+body{margin:0;font-family:sans-serif;background:#FFF7F0;}
+.shell{padding:16px;max-width:420px;margin:auto;}
+.header{padding:12px;background:#fff;border-bottom:1px solid #eee;}
+.brand{display:flex;align-items:center;gap:10px;}
+.logo{width:26px;height:16px;border-radius:20px;
+background:linear-gradient(90deg,#B7A137,#FADCD8,#F36F3B,#9CC4BC,#FBAF40);}
+.name{font-weight:700;}
+.hero{text-align:center;margin:20px 0;}
+.hero.small{margin:10px 0;}
+.sub{color:#555;}
+.btn{padding:10px 18px;border:none;border-radius:20px;background:#F36F3B;color:white;cursor:pointer;}
+.btn.ghost{background:white;color:#333;border:1px solid #ccc;}
+.features .card, .alerts .alert, .card, .pet{background:#fff;padding:14px;border-radius:16px;margin:10px 0;box-shadow:0 2px 6px #0001;}
+.pet{display:flex;align-items:center;gap:12px;}
+.avatar{width:46px;height:46px;border-radius:14px;background:#eee;}
+.avatar.dog{background:#FBAF40;}
+.avatar.cat{background:#9CC4BC;}
+.avatar.bunny{background:#FADCD8;}
+.alert.warn{border-left:4px solid #F36F3B;}
+.alert.info{border-left:4px solid #9CC4BC;}
+.alert.ok{border-left:4px solid #B7A137;}
+.footer{text-align:center;padding:20px;color:#777;}
