@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pawlse · Temperature View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="demo-body">
+  <div class="page">
+    <header class="site-header">
+      <nav class="nav shell">
+        <div class="brand">
+          <div class="logo-pill"></div>
+          <div class="brand-text">
+            <span class="brand-name">Pawlse</span>
+            <span class="brand-tag">Temperature</span>
+          </div>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="demo.html">Back to demo</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="shell demo-main">
+      <section class="tile animate-pop">
+        <h1>Temperature at a glance</h1>
+        <p class="tile-sub">
+          This view imagines how Pawlse could show long-term warmth patterns
+          without turning every hot day into an alarm.
+        </p>
+      </section>
+
+      <section class="tile animate-float">
+        <h2>Weekly warmth pattern</h2>
+        <div class="trend-graph temp-only">
+          <div class="trend-line temp"></div>
+          <div class="trend-axis">
+            <span>Mon</span><span>Wed</span><span>Fri</span><span>Sun</span>
+          </div>
+        </div>
+        <p class="tile-sub">
+          The idea: light amber area for safe variation, stronger amber for “warm but okay”,
+          and only rare coral zones when multiple factors stack up.
+        </p>
+      </section>
+
+      <section class="tile animate-pop">
+        <h2>Example insights</h2>
+        <ul class="trend-list">
+          <li>Warmer evenings after long walks, stable overnight.</li>
+          <li>Short spikes after intense play, returning to baseline within 20–30 minutes.</li>
+          <li>Cooler mornings on rainy days, no concerning dips.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <span>Concept UI · Not real medical data.</span>
+        <span class="footer-links">
+          <a href="demo.html">Back to demo</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

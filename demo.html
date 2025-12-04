@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pawlse · Demo Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="demo-body">
+  <div class="page">
+    <header class="site-header">
+      <nav class="nav shell">
+        <div class="brand">
+          <div class="logo-pill"></div>
+          <div class="brand-text">
+            <span class="brand-name">Pawlse</span>
+            <span class="brand-tag">Demo dashboard</span>
+          </div>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Landing</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="shell demo-main" id="demo-main">
+      <section class="demo-header">
+        <div class="demo-heading animate-pop">
+          <h1>Mochi’s day, simulated.</h1>
+          <p>
+            Pick a scenario to see how Pawlse could react to a real band:
+            energetic park day, slow couch day, or noise stress from storms.
+          </p>
+          <div class="demo-modes">
+            <button class="btn primary mode-btn" data-mode="park">Park day</button>
+            <button class="btn ghost mode-btn" data-mode="lazy">Lazy Sunday</button>
+            <button class="btn ghost mode-btn" data-mode="storm">Storm stress</button>
+          </div>
+        </div>
+        <aside class="demo-summary animate-float">
+          <div class="summary-card">
+            <div class="summary-row">
+              <span class="summary-label">Pet</span>
+              <span class="summary-value">Mochi · Dog · 3 yrs</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Band status</span>
+              <span class="summary-value">Demo only · No real data</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Scenario</span>
+              <span class="summary-value" id="mode-label">Park day</span>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="demo-grid">
+        <!-- Live snapshot -->
+        <div class="tile live-tile animate-pop">
+          <h2>Live snapshot</h2>
+          <div class="live-metrics">
+            <div class="metric-chip">
+              <span class="label">Skin temp</span>
+              <span class="value" id="temp-value">38.1°C</span>
+              <span class="hint" id="temp-hint">Warm from running, still safe.</span>
+            </div>
+            <div class="metric-chip">
+              <span class="label">Heart trend</span>
+              <span class="value" id="hr-value">↑ active</span>
+              <span class="hint" id="hr-hint">Settling back toward baseline.</span>
+            </div>
+            <div class="metric-chip">
+              <span class="label">Activity</span>
+              <span class="value" id="act-value">High</span>
+              <span class="hint" id="act-hint">Plenty of zoomies logged.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Health trends -->
+        <div class="tile animate-pop" id="health">
+          <h2>Health trends</h2>
+          <p class="tile-sub">
+            This is how Pawlse might describe the day, without pretending to diagnose.
+          </p>
+          <ul class="trend-list" id="trend-list"></ul>
+        </div>
+
+        <!-- Timeline -->
+        <div class="tile animate-pop" id="history">
+          <h2>Today’s timeline</h2>
+          <ol class="timeline-list" id="timeline"></ol>
+        </div>
+
+        <!-- Alerts -->
+        <div class="tile animate-pop">
+          <h2>Alerts in this scenario</h2>
+          <div class="demo-alerts" id="demo-alerts"></div>
+        </div>
+
+        <!-- Light control (cute & playful) -->
+        <div class="tile animate-pop" id="light-control">
+          <h2>Control your band light</h2>
+          <p class="tile-sub">
+            Fake but fun: imagine changing EmotiPaw’s chest light before a walk.
+          </p>
+          <div class="light-preview-wrapper">
+            <div class="light-preview bounce-light" id="light-preview"></div>
+          </div>
+          <div class="light-controls">
+            <div class="control-group">
+              <span class="control-label">Light color</span>
+              <div class="pill-row" id="color-buttons">
+                <button class="pill-btn color amber" data-color="amber">Amber</button>
+                <button class="pill-btn color coral" data-color="coral">Coral</button>
+                <button class="pill-btn color teal" data-color="teal">Teal</button>
+                <button class="pill-btn color green" data-color="green">Green</button>
+              </div>
+            </div>
+            <div class="control-group">
+              <span class="control-label">Light mode</span>
+              <div class="pill-row" id="mode-buttons">
+                <button class="pill-btn mode active" data-lightmode="solid">Solid</button>
+                <button class="pill-btn mode" data-lightmode="pulse">Pulse</button>
+                <button class="pill-btn mode" data-lightmode="bounce">Bounce</button>
+              </div>
+            </div>
+            <div class="control-group">
+              <span class="control-label">
+                Brightness
+                <span class="brightness-value" id="brightness-value">80%</span>
+              </span>
+              <input type="range" min="20" max="100" value="80" id="brightness-slider" />
+            </div>
+            <button class="btn primary btn-full bounce-on-hover" id="test-light">
+              Test light
+            </button>
+          </div>
+        </div>
+
+        <!-- Deep dives -->
+        <div class="tile animate-pop" id="deep-dives">
+          <h2>Deep dives</h2>
+          <p class="tile-sub">
+            Explore how Pawlse might break things down into focused views for each signal.
+          </p>
+          <div class="deep-grid">
+            <button class="deep-card bounce-on-hover" onclick="window.location.href='temp.html'">
+              <h3>Temperature</h3>
+              <p>Warm days, cool nights, and early warnings.</p>
+            </button>
+            <button class="deep-card bounce-on-hover" onclick="window.location.href='heartrate.html'">
+              <h3>Heart trends</h3>
+              <p>Play spikes, calm curves, and jitters from stress.</p>
+            </button>
+            <button class="deep-card bounce-on-hover" onclick="window.location.href='activity.html'">
+              <h3>Activity & rest</h3>
+              <p>Zoomies, walks, naps, and deep sleep patterns.</p>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <span>Demo only · All data is pretend.</span>
+        <span class="footer-links">
+          <a href="index.html">Back to landing</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

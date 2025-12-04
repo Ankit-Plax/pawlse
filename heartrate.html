@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pawlse · Heart Trend View</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="demo-body">
+  <div class="page">
+    <header class="site-header">
+      <nav class="nav shell">
+        <div class="brand">
+          <div class="logo-pill"></div>
+          <div class="brand-text">
+            <span class="brand-name">Pawlse</span>
+            <span class="brand-tag">Heart trends</span>
+          </div>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="demo.html">Back to demo</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="shell demo-main">
+      <section class="tile animate-pop">
+        <h1>Heart trends, not mind reading.</h1>
+        <p class="tile-sub">
+          Pawlse doesn’t try to read emotions. It simply looks at how heart-rate trends
+          move with play, rest, and stress.
+        </p>
+      </section>
+
+      <section class="tile animate-float">
+        <h2>Activity vs recovery</h2>
+        <div class="trend-graph hr-only">
+          <div class="trend-line act"></div>
+          <div class="trend-axis">
+            <span>Play</span><span>Cool-down</span><span>Nap</span>
+          </div>
+        </div>
+        <p class="tile-sub">
+          In a real app, you’d see curves showing quick spikes during play and smooth,
+          gradual returns to that pet’s personal “calm” band.
+        </p>
+      </section>
+
+      <section class="tile animate-pop">
+        <h2>Example insights</h2>
+        <ul class="trend-list">
+          <li>Strong, clean spikes during ball chasing with no irregular jitters.</li>
+          <li>Smooth cool-down curves after walks, matching previous weeks.</li>
+          <li>Small stress jitters only during heavy storms or loud noises.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <span>Concept UI · Heart trend view only.</span>
+        <span class="footer-links">
+          <a href="demo.html">Back to demo</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

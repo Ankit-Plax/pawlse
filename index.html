@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pawlse · Pet Health in Living Color</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <nav class="nav shell">
+        <div class="brand">
+          <div class="logo-pill"></div>
+          <div class="brand-text">
+            <span class="brand-name">Pawlse</span>
+            <span class="brand-tag">Little pulses, big stories.</span>
+          </div>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#pets">Pets</a>
+          <a href="#alerts">Alerts</a>
+          <button class="btn primary small" onclick="window.location.href='demo.html'">
+            Try demo
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero shell" id="top">
+        <div class="hero-text animate-pop">
+          <p class="hero-kicker">EmotiPaw + Pawlse</p>
+          <h1>Track your pet’s tiny signals in one playful space.</h1>
+          <p class="hero-sub">
+            Pawlse connects with the EmotiPaw band and turns temperature, activity,
+            and heart trends into a colorful story of your pet’s day.
+          </p>
+          <div class="hero-actions">
+            <button class="btn primary" onclick="window.location.href='demo.html'">
+              Try demo dashboard
+            </button>
+          </div>
+          <p class="hero-footnote">
+            No medical claims. Just trend-based insights, gentle alerts, and lots of love.
+          </p>
+        </div>
+
+        <div class="hero-panel animate-float">
+          <div class="panel-card">
+            <div class="panel-header">
+              <div class="pill pill-online">
+                <span class="dot dot-online"></span>
+                EmotiPaw · Connected
+              </div>
+              <select class="pet-select" aria-label="Choose pet">
+                <option>Mochi · Dog</option>
+                <option>Luna · Cat</option>
+                <option>Oreo · Rabbit</option>
+              </select>
+            </div>
+
+            <div class="panel-body">
+              <div class="metric-grid">
+                <div class="metric-card accent-amber bounce-on-hover">
+                  <p class="metric-label">Skin temp</p>
+                  <p class="metric-value">37.9°C</p>
+                  <p class="metric-note">Within normal range</p>
+                </div>
+                <div class="metric-card accent-teal bounce-on-hover">
+                  <p class="metric-label">Activity</p>
+                  <p class="metric-value">+42%</p>
+                  <p class="metric-note">More zoomies today</p>
+                </div>
+                <div class="metric-card accent-coral bounce-on-hover">
+                  <p class="metric-label">Alerts</p>
+                  <p class="metric-value">1</p>
+                  <p class="metric-note">Short heat spike at 3:21 pm</p>
+                </div>
+                <div class="metric-card accent-olive bounce-on-hover">
+                  <p class="metric-label">Battery</p>
+                  <p class="metric-value">78%</p>
+                  <p class="metric-note">~2 days left</p>
+                </div>
+              </div>
+
+              <div class="trend-card">
+                <div class="trend-header">
+                  <h2>Today’s Pawlse</h2>
+                  <div class="trend-legend">
+                    <span class="legend-pill temp">Temp</span>
+                    <span class="legend-pill act">Activity</span>
+                  </div>
+                </div>
+                <div class="trend-graph">
+                  <div class="trend-line temp"></div>
+                  <div class="trend-line act"></div>
+                  <div class="trend-axis">
+                    <span>Morning</span><span>Noon</span><span>Evening</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="panel-caption">
+            Colors match the band: teal for movement, amber for warmth, coral for “hey, check this”.
+          </p>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="section shell" id="features">
+        <header class="section-header">
+          <p class="section-kicker">Core features</p>
+          <h2>Designed for real pets and real humans.</h2>
+          <p class="section-sub">
+            Pawlse focuses on clear signals your pet already gives you: temperature shifts,
+            bursts of activity, and changes in their usual rhythm.
+          </p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature-card animate-pop">
+            <div class="feature-tag">Temperature</div>
+            <h3>See warmth as a pattern.</h3>
+            <p>
+              Track gentle rises and sudden spikes instead of single readings, so you know
+              when the day is just hot—or when it’s worth paying attention.
+            </p>
+          </article>
+
+          <article class="feature-card animate-pop delay-1">
+            <div class="feature-tag">Activity</div>
+            <h3>Zoomies, naps, and everything between.</h3>
+            <p>
+              Pawlse turns raw motion data into clear “more than usual”, “less than usual”,
+              or “this looks like stress pacing”.
+            </p>
+          </article>
+
+          <article class="feature-card animate-pop delay-2">
+            <div class="feature-tag">Heart trend</div>
+            <h3>Rhythm over random spikes.</h3>
+            <p>
+              Instead of pretending to decode feelings, Pawlse looks for calm curves,
+              restless jitters, and recovery after play.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Pets -->
+      <section class="section shell" id="pets">
+        <header class="section-header">
+          <p class="section-kicker">Your crew</p>
+          <h2>Switch between pets without losing their story.</h2>
+          <p class="section-sub">
+            Each pet gets its own baselines and history. A sleepy cat should not be judged
+            like a working dog, and Pawlse knows that.
+          </p>
+        </header>
+
+        <div class="pet-grid">
+          <article class="pet-card bounce-on-hover">
+            <div class="pet-avatar pet-dog"></div>
+            <div class="pet-body">
+              <div class="pet-header">
+                <h3>Mochi</h3>
+                <span class="pet-tag">Dog · 3 yrs</span>
+              </div>
+              <p class="pet-note">Afternoon zoomies, couch potato by 8 pm.</p>
+              <div class="pet-chips">
+                <span class="chip chip-good">Stable temp</span>
+                <span class="chip chip-good">Healthy activity</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="pet-card bounce-on-hover">
+            <div class="pet-avatar pet-cat"></div>
+            <div class="pet-body">
+              <div class="pet-header">
+                <h3>Luna</h3>
+                <span class="pet-tag">Cat · 5 yrs</span>
+              </div>
+              <p class="pet-note">Night hallway races, morning window sunbaths.</p>
+              <div class="pet-chips">
+                <span class="chip chip-watch">Mild stress spikes</span>
+                <span class="chip chip-soft">Worth keeping an eye on</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="pet-card bounce-on-hover">
+            <div class="pet-avatar pet-bunny"></div>
+            <div class="pet-body">
+              <div class="pet-header">
+                <h3>Oreo</h3>
+                <span class="pet-tag">Rabbit · 1 yr</span>
+              </div>
+              <p class="pet-note">Shy on day one, secretly dramatic on day three.</p>
+              <div class="pet-chips">
+                <span class="chip chip-good">Calm baseline</span>
+                <span class="chip chip-soft">Few alerts overall</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Alerts -->
+      <section class="section shell" id="alerts">
+        <header class="section-header">
+          <p class="section-kicker">Gentle alerts</p>
+          <h2>Designed to nudge, not panic.</h2>
+          <p class="section-sub">
+            Pawlse highlights what stays unusual, not every tiny wiggle. When it does speak up,
+            it does so calmly and with context.
+          </p>
+        </header>
+
+        <div class="alert-layout">
+          <div class="alert-timeline">
+            <div class="alert-item level-warn animate-pop">
+              <div class="alert-time">Today · 3:21 pm</div>
+              <div class="alert-main">
+                Short heat rise after intense play. Suggested: water, shade, and a short break.
+                No emergency, just a heads-up.
+              </div>
+            </div>
+            <div class="alert-item level-info animate-pop delay-1">
+              <div class="alert-time">Yesterday · 9:12 pm</div>
+              <div class="alert-main">
+                Longer nap than usual. Likely recovery from a high-activity afternoon.
+              </div>
+            </div>
+            <div class="alert-item level-ok animate-pop delay-2">
+              <div class="alert-time">This week</div>
+              <div class="alert-main">
+                Trend: activity rising, stress markers easing. New routine seems to be helping.
+              </div>
+            </div>
+          </div>
+
+          <aside class="alert-side">
+            <div class="side-card">
+              <h3>Alert philosophy</h3>
+              <p>
+                Pawlse is built to support, not alarm. It focuses on trends, context,
+                and your pet’s own history.
+              </p>
+              <ul class="side-list">
+                <li>Trend-based, not drama-based</li>
+                <li>Separate rules per pet</li>
+                <li>Band beeps kept gentle and rare</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section shell" id="about">
+        <header class="section-header">
+          <p class="section-kicker">Why this exists</p>
+          <h2>What Makes Pawlse Different</h2>
+          <p class="section-sub">
+            Pawlse doesn’t guess how your pet “feels”. It simply listens to what their
+            body already says and makes it readable.
+          </p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <ul class="about-list">
+              <li><strong>Trend-first:</strong> focuses on patterns over time, not single spikes.</li>
+              <li><strong>Species-aware:</strong> dog days are not cat days, and Pawlse knows it.</li>
+              <li><strong>Human-friendly:</strong> clear language like “chill”, “watch”, or “check now”.</li>
+              <li><strong>Respectful:</strong> built to complement, not replace, real veterinary care.</li>
+            </ul>
+            <p class="about-note">
+              The dream: a simple way to notice changes early, celebrate good days,
+              and understand your pet a little better.
+            </p>
+          </div>
+          <div class="about-card animate-float">
+            <h3>Try it in demo first</h3>
+            <p>
+              Explore a fake-but-realistic dashboard with different scenarios:
+              park day, lazy Sunday, or stormy night anxiety.
+            </p>
+            <button class="btn primary btn-full" onclick="window.location.href='demo.html'">
+              Open demo dashboard
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <span>&copy; <span id="year"></span> Pawlse Lab.</span>
+        <span class="footer-links">
+          <a href="#top">Back to top</a>
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
